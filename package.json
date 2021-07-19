@@ -1,0 +1,28 @@
+{
+  "name": "nodegui-components",
+  "version": "1.0.0",
+  "description": "Framework de componentes ui para NodeGui",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "qode ./teste.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melklobo/nodegui-components.git"
+  },
+  "keywords": [
+    "NodeGui",
+    "Framework",
+    "Gui"
+  ],
+  "author": "Melquizedeque S. Lobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melklobo/nodegui-components/issues"
+  },
+  "homepage": "https://github.com/melklobo/nodegui-components#readme",
+  "dependencies": {
+    "@nodegui/nodegui": "^0.33.3"
+  }
+}
