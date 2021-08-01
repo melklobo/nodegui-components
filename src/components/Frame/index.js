@@ -52,14 +52,14 @@ module.exports = class {
         flex-grow: 5;
         margin: 0 2px;
         
-        border: 1px solid
+      
 
         `)
 
 
 
         this.toolbar.setInlineStyle(`
-        border: 1px solid;
+      
         height:30px;     
         display: flex;
         flex-direction: row;      
@@ -67,7 +67,7 @@ module.exports = class {
         
         `)
         this.container.setInlineStyle(`
-        border: 1px solid;
+       
         height: 100%;
         flex-grow: 1;
         background: "#ffffff"

@@ -56,7 +56,7 @@ let svg2img = require('svg2img');
         this.group.setStyleSheet(`
 
         #groupButtons{
-            border: 1px solid;
+            
             height:30px;
             width:90px;
             display: flex;        
