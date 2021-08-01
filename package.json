@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/melklobo/nodegui-components#readme",
   "dependencies": {
-    "@nodegui/nodegui": "^0.33.3"
+    "@mdi/js": "^5.9.55",
+    "@nodegui/nodegui": "^0.33.3",
+    "svg2img": "^0.9.3"
   }
 }

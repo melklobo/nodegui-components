@@ -15,9 +15,10 @@ module.exports.window = (...props) => {
         typeof prop == "object" ? Array.isArray(prop) ? children = prop : properties = prop : typeof props == "string" ? children = prop : null;
     })
 
+  
    return new Window()
         .setProperties(properties)
-        .addChildren(children)
+      .addChildren(children)
         .show()
 
 
@@ -35,10 +36,10 @@ module.exports.frame = (...props) => {
         typeof prop == "object" ? Array.isArray(prop) ? children = prop : properties = prop : typeof props == "string" ? children = prop : null;
     })
 
-   return new frame()
+   return new Frame()
         .setProperties(properties)
         .addChildren(children)
-        .show()
+       
 
 
 

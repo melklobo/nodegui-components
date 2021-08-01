@@ -14,6 +14,7 @@ module.exports =  {
     height: (win, height = 500) => {
         win.resize(win.size().width(), height)
     },
+  
     frame: (win, bool = true) => { 
         win.setWindowFlag(WindowType.FramelessWindowHint, !bool);
     },
