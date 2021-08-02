@@ -76,7 +76,7 @@ module.exports = class {
         
   
       
-
+        
 
 
         this.container_titulo.layout.addWidget(this.icon)

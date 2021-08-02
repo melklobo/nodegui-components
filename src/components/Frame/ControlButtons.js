@@ -3,6 +3,7 @@ let { mdiCloseBoxOutline, mdiWindowMaximize, mdiWindowMinimize, mdiFullscreen } 
 let svg2img = require('svg2img');
  class ControlButtons {
     constructor() {
+        this.context = null;
         this.group = new QWidget();
         this.ButtonFullscreen = new QLabel();
         this.ButtonMinimize = new QLabel();
@@ -34,11 +35,14 @@ let svg2img = require('svg2img');
                 win.showMinimized()
 
         });
-
-        this.ButtonMaximize.addEventListener(WidgetEventTypes.MouseButtonPress, (nativeEvt) => {
+        let _this = this
+        this.ButtonMaximize.addEventListener(WidgetEventTypes.MouseButtonRelease, (nativeEvt) => {
             const mouseEvt = new QMouseEvent(nativeEvt);
-            if (mouseEvt.button() == 1)
-                win.showMaximized()
+            if (mouseEvt.button() == 1){              
+                win.showMaximized();
+                win.center();
+            }
+                
 
         });
 
@@ -115,6 +119,7 @@ let svg2img = require('svg2img');
         this.group.layout.addWidget(this.ButtonClose)
 
     }
+
 
     get(){
         return this.group;
